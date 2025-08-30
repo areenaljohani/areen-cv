@@ -1,0 +1,393 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+.cards{
+    background-color: #E4E4E4;
+}
+
+/**/
+.table-style {
+  width:100%;
+  border-spacing: 20px;
+}
+
+.Certificates a {
+    color: #B99E96;
+}
+
+.footer-title a {
+    color: #7D3C76;
+}
+/**/
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #95478D;
+/*    #3a6cf4;*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: #7D3C76;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #B99E96;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*welcome to my site*/
+/* animation */
+.main h1 {
+    color: #B99E96;
+    font-size: 1.4em;
+    font-weight: 500;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+/*areen aljohani*/
+.main h2  {
+    display: inline-block;
+    margin-top: 10px;
+    color: #7D3C76;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+
+
+/*CS student*/
+.main h3 {
+    color: #B99E96; 
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* button (let's start) */
+.main-btn {
+    color: #fff;
+    background-color: #7D3C76;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+} 
+
+.main-btn:hover {
+    background-color: #B99E96;
+    transform: scale(1.1);
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #7D3C76;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* cards */
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*objective*/
+
+.objective-card{
+        background-color: #fff;
+        width: 75%; 
+        height: auto; 
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+        border-radius: 10px;
+        padding: 5px; 
+        margin: 15px;
+        transition: 0.7s ease;
+        font-size: 1.1em;
+}
+
+.objective-info {
+    padding: 2em;
+}
+
+.objective-card:hover {
+    transform: scale(1.1);
+}
+
+
+/* about me */
+.info {
+    text-align: center;
+}
+
+.info p {
+    font-size: 1.2em;
+}
+
+.info table {
+    font-size: 1.2em;
+}
+
+.info h3{
+    color: #7D3C76;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+/*  Certificates  */
+
+.Certificates {
+    background-color: #E4E4E4;
+}
+
+
+.Certificates .content{
+    margin-top: 30px;
+}
+
+.Certificates-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.Certificates-card:hover {
+   transform: scale(1.1);
+}
+
+.Certificates-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.Certificates-image img{
+    width: 100%
+}
+
+.Certificates-info {
+    padding: 1em;
+}
+
+.Certificates-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.Certificates-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+/* cntact */
+.contact .info h3 {
+    color: #7D3C76;
+}
+
+.contact .info p {
+    font-size: 1.2em;
+}
+/*submit button*/
+.btn.btn-primary {
+    background-color: #7D3C76;
+    color: white;
+    font-size: 12px;
+    border: 0px ;
+  }
+.btn.btn-primary:hover {
+    background-color: #B99E96;
+  }
+
+
+/* footer */
+.footer {
+    background-color: #ECECEC;
+    color: #7D3C76;
+    padding: 1em;
+/*    display: flex;*/
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+/*dark mode*/
+
+.dark-mode {
+  background-color: gray;
+  .card{
+    background-color: lightgray;
+  }
+  .cards{
+    background-color: gray;
+  }
+  .Certificates{
+    background-color: gray;
+  }
+  .objective-card{
+    background-color: lightgray;
+  }
+  color: black;
+}
+
+ .image-button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+/**/
+        color: #7D3C76;
+        text-decoration: none;
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+
+
+
+/*  media   */
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
